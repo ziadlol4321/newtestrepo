@@ -3,11 +3,11 @@
 ## Different ways to code fibbonacci sequence on your favourite compiler!
 <ol>
  <li><a href='#first'> first</a> </li>
-<li>second </li>
+ <li><a href='#second'>second</a> </li>
 <li>third </li>
 </ol>
 
-## <a id='first'></a> THE RECURSIVE WAY
+## <a id='first'></a> THE RECURSIVE METHOD
 
 ```// Fibonacci Series using Recursion
 #include <bits/stdc++.h>
@@ -26,4 +26,55 @@ int main()
     cout << fib(n);
     getchar();
     return 0;
-}```
+}
+
+```
+## <a id='second'></a> DYNAMIC PROGRAMMING METHOD
+
+```
+// C++ program for Fibonacci Series
+// using Dynamic Programming
+#include<bits/stdc++.h>
+using namespace std;
+
+class GFG{
+	
+public:
+int fib(int n)
+{
+	
+	// Declare an array to store
+	// Fibonacci numbers.
+	// 1 extra to handle
+	// case, n = 0
+	int f[n + 2];
+	int i;
+
+	// 0th and 1st number of the
+	// series are 0 and 1
+	f[0] = 0;
+	f[1] = 1;
+
+	for(i = 2; i <= n; i++)
+	{
+		
+	//Add the previous 2 numbers
+	// in the series and store it
+	f[i] = f[i - 1] + f[i - 2];
+	}
+	return f[n];
+	}
+};
+
+// Driver code
+int main ()
+{
+	GFG g;
+	int n = 9;
+	
+	cout << g.fib(n);
+	return 0;
+}
+
+// This code is contributed by SoumikMondal
+```
