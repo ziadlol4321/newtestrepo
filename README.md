@@ -2,12 +2,12 @@
 
 ## Different ways to code fibbonacci sequence on your favourite compiler!
 <ol>
-<li>first </li>
+ <li><a href='#first'> first</a> </li>
 <li>second </li>
 <li>third </li>
 </ol>
 
-## THE RECURSIVE WAY
+## <a id='first'></a> THE RECURSIVE WAY
 
 ```// Fibonacci Series using Recursion
 #include <bits/stdc++.h>
